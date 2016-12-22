@@ -1,0 +1,48 @@
+<ion-header-bar class="bar-stable">
+    <a href="#/home" class="button icon-left ion-chevron-left button-clear button-dark">Back</a>
+    <h1 class="title">Search</h1>
+  </ion-header-bar>
+<ion-content has-subheader="false">
+    <ng-map zoom="10" center="[11.0168, 76.9558]" style="display: block; height: 240px;">
+      <info-window id="map-info-window">
+        <div ng-non-bindable>
+          <h4>{{selectedP.name}}</h4>
+          <div>{{selectedP.place}}</div>
+        </div>
+      </info-window>
+      <marker ng-repeat="p in locations" position="{{p.position}}" on-click="showInfo(event, p)"></marker>
+    </ng-map>
+  <!-- <p ng-repeat="loca in locations">{{loca.place}}</p> -->
+  <div style="background-color: #F44336;height:60%">
+    <form>
+      <div class="list">
+        <label class="item item-input item-select">
+          <div class="input-label">
+            City
+          </div>
+          <select ng-model="selectedcity" ng-change="changecity(selectedcity)">
+            <option value="{{ c.id }}" ng-repeat="c in city">{{c.name}}</option>
+          </select>
+        </label>
+        <label class="item item-input item-select">
+          <div class="input-label">
+            Location
+          </div>
+          <select ng-model="selectedlocation" ng-change="changelocation(selectedlocation)">
+            <option ng-repeat="l in location" value="{{ l.position }}">{{l.name}}</option>
+          </select>
+        </label>
+      </div>
+      
+      <button class="button button-block button-positive" style="background-color: #f15d52;">
+        Find
+      </button>
+    </form>
+    <!-- <p style="text-align: center; font-family: cursive; padding-top: 7%;color: white;letter-spacing: 5px;padding-bottom:7%;background-color: salmon;">20
+      <br> Mandapam</p> -->
+    <p style="text-align: center;padding-top:15px">
+      <a href="#" ui-sref="result" class="alink" style="padding: 0px 90px 0px 0px;">Show</a>
+      <a href="#" class="alink">Filter</a>
+    </p>
+  </div>
+</ion-content>

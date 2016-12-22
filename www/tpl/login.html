@@ -1,0 +1,25 @@
+<ion-content has-subheader="false" class="login">
+	<h2 class="h2">Welcome Back</h2>
+	<form name="loginform">
+		<div class="list">
+		  <label class="item item-input">
+		    <span class="input-label">Email</span>
+		    <input type="email" ng-model="loginForm.email" required>
+		  </label>
+		  <label class="item item-input">
+		    <span class="input-label">Password</span>
+		    <input type="password" ng-model="loginForm.password" required>
+		  </label>
+		</div>
+            <button class="button button-block bt" ng-disabled="loginform.$invalid" ng-click="login()">
+              Sign In
+            </button>
+	</form>
+	<p style="text-align: center;padding-top:15px">
+            <a href="#" ui-sref="register" class="alink" style="padding: 0px 90px 0px 0px;">Sgin Up</a>
+            <!-- <a style="padding: 0px 0px 0px 0px;">|</a> -->
+            <a href="#" class="alink">Forget Password</a>
+          </p>
+
+</ion-content>
+<!-- <div class="slide_info">Powered by xxx</div> -->

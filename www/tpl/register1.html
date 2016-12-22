@@ -1,0 +1,22 @@
+<ion-content has-subheader="false" class="reg">
+	<h2 class="hr">Register</h2>
+	<form name="registerform" novalidate>
+		<div class="list list-inset">
+		  <label class="item item-input">
+		    <input type="email" required placeholder="Email" ng-model="registerForm.email">
+		  </label>
+		  <label class="item item-input">
+		    <input type="password" required placeholder="enter password" ng-model="registerForm.password">
+		  </label>
+		  <label class="item item-input">
+		    <input type="password" required placeholder="retype password"  ng-model="registerForm.passwordre">
+		  </label>
+		</div>
+		<div style="margin: 0 10px 0 10px;">
+            <button class="button button-block bt" ng-disabled="registerform.$invalid || registerForm.password !== registerForm.passwordre" ng-click="register()">Submit</button>
+        </div>
+	</form>
+	<p style="text-align: center;padding-top:15px">
+            Already have an account? <a href="#" ui-sref="login" class="alink">Sign In</a>
+          </p>
+</ion-content>

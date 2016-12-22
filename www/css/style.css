@@ -1,0 +1,62 @@
+/* Empty. Add your own CSS if you like */
+.cbutton {
+    background-color: #f15d52;
+    border-radius: 25px;
+    min-width: 65%;
+}
+
+.align{
+	line-height: 60px;
+	text-align: -webkit-center;
+}
+
+.h2{
+	text-align: -webkit-center; 
+	font-family: fantasy;
+	color: white;
+	margin-bottom: 25px
+}
+
+.home{
+	padding: 135px 0px 0px 0px;
+}
+
+.login{
+	padding: 135px 20px 0px 20px;
+}
+
+.reg{
+	padding: 20px 10px 0px 10px;
+}
+
+.hr{
+	text-align: -webkit-center; 
+	font-family: fantasy; 
+	padding: 30px 0px 0px 0px;
+	color: white;
+	margin-bottom: 20px
+}
+
+.slide_info {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 3px;
+    position: absolute;
+    bottom: 15px;
+}
+
+.bt{
+	color: white;
+	background-color: #e42112
+}
+
+.alink {
+    text-decoration: blink;
+    color: white;
+}
+
+.detail{
+	background-color: white;
+    padding: 10px 15px 10px 15px;
+}

@@ -1,0 +1,74 @@
+<ion-header-bar class="bar-stable">
+        <a href="#/result" class="button icon-left ion-chevron-left button-clear button-dark">Back</a>
+        <h1 class="title">{{artists[whichItem].name}}</h1>
+      </ion-header-bar>
+
+<ion-content has-subheader="false" class="detail">
+  <div ng-model="artists">
+    <h1>{{artists[whichItem].name}}</h1>
+      <h3>{{artists[whichItem].reknown}}</h3>
+      
+      <div class="item item-image">
+	    <img src="../img/page_photo.jpg">
+	  </div>
+      <!-- <img ng-src="images/{{artists[whichItem].shortname}}_tn.jpg" alt="Photo of {{artists[whichItem].name}}"> -->
+      <p>{{artists[whichItem].bio}}</p>
+		<!--Mandapam information-->
+		<div class="list card" style="margin: 0 0 10px 0;">
+		  <a href="#" class="item item-icon-left">
+		    <i class="icon ion-person"></i>
+		    Type(simple,medium,rich)
+		  </a>
+
+		  <a href="#" class="item item-icon-left">
+		    <i class="icon ion-person-stalker"></i>
+		    Space(inside mandapam)
+		  </a>
+
+		  <a href="#" class="item item-icon-left">
+		    <i class="icon ion-bike"></i>
+		    Parking Space
+		  </a>
+
+		  <a href="#" class="item item-icon-left">
+		    <i class="icon ion-wallet"></i>
+		    Amount
+		  </a>
+		</div>
+
+      <div class="list card" style="margin: 0 0 10px 0;">
+		  <a href="#" class="item item-icon-left">
+		    <i class="icon ion-person"></i>
+		    Owner Name
+		  </a>
+
+		  <a href="#" class="item item-icon-left">
+		    <i class="icon ion-ios-telephone"></i>
+		    Phone number
+		  </a>
+
+		  <a href="#" class="item item-icon-left">
+		    <i class="icon ion-email"></i>
+		    Email ID
+		  </a>
+
+		  <a href="#" class="item item-icon-left">
+		    <i class="icon ion-link"></i>
+		    Web Site
+		  </a>
+		</div>
+
+		<!--Adress-->
+		<div class="card" style="margin: 0 0 10px 0">
+		  <div class="item item-divider">
+		    Address
+		  </div>
+		  <div class="item item-text-wrap">
+		    Mandapam Address
+		  </div>
+		  <!-- <div class="item item-divider">
+		    I'm a Footer in a Card!
+		  </div> -->
+		</div>
+  </div>
+</ion-content>

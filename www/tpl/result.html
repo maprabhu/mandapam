@@ -1,0 +1,18 @@
+<!--header-->
+<ion-header-bar class="bar-stable">
+        <a href="#/home" class="button icon-left ion-chevron-left button-clear button-dark">Back</a>
+        <h1 class="title">RS Puram</h1>
+      </ion-header-bar>
+
+<!--Content-->
+<ion-content has-subheader="false" style="background-color:white">
+	<div class="list"> 
+    <div ng-repeat="item in artists">
+      <a class="item item-thumbnail-left" ui-sref="detail({itemId: $index})">
+        <img src="../img/page_photo.jpg">
+        <h2>{{item.name}}</h2>
+        <p>{{item.reknown}}</p>
+      </a>
+    </div>
+  </div>
+</ion-content>
